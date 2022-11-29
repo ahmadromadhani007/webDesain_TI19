@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selectors</title>
+    <style>
+        div~p {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- combinator selector ada 4 macam : 
+Selector turunan/descendant(spasi)
+Selector anak/child(>)
+Selector saudara dekat/ Adjacent Sibling(+)
+Selector saudara umum/ General Sibling(~)
+-->
+    <div>
+        <p>1st Paragraph</p>
+        <p>2nd Paragraph</p>
+        <section>
+            <p>3rd Paragraph</p>
+        </section>
+    </div>
+    <p>4th Paragraph</p>
+    <p>5th Paragraph</p>
+
+    <div>
+        <p>6th Paragraph</p>
+        <p>7th Paragraph</p>
+    </div>
+
+    <p>8th Paragraph</p>
+    <p>9th Paragraph</p>
+
+</body>
+
+</html>

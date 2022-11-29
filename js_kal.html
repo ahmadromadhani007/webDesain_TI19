@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="angka1"> <br> <br>
+    <input type="text" id="angka2"> <br> <br>
+    <button onclick="tambah()">Tambah</button> <br> <br>
+    <button onclick="kurang()">Kurang</button> <br> <br>
+    <button onclick="bagi()">Bagi</button> <br> <br>
+    <button onclick="kali()">Kali</button> <br> <br>
+    <input type="text" id="hasil">
+
+    <script>
+        function tambah() {
+            let a1 = document.getElementById("angka1").value;
+            let a2 = document.getElementById("angka2").value;
+            a1 = parseInt(a1)
+            a2 = parseInt(a2)
+            let hasil = a1 + a2;
+            document.getElementById("hasil").value = hasil;
+        }
+        function kurang() {
+            let a1 = document.getElementById("angka1").value;
+            let a2 = document.getElementById("angka2").value;
+            a1 = parseInt(a1)
+            a2 = parseInt(a2)
+            let hasil = a1 - a2;
+            document.getElementById("hasil").value = hasil;
+        }
+    </script>
+</body>
+
+</html>
