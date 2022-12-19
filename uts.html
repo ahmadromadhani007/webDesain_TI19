@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS</title>
+</head>
+
+<body>
+
+    <input type="text" id="angka1"> <br> <br>
+    <input type="text" id="angka2"> <br> <br>
+    <input type="text" id="angka3"> <br> <br>
+    <button onclick="rata2()">Hitung</button> <br> <br>
+    <input type="text" id="hasil">
+    </tr>
+    <script>
+        function rata2() {
+            let a1 = document.getElementById("angka1").value;
+            let a2 = document.getElementById("angka2").value;
+            let a3 = document.getElementById("angka3").value;
+            a1 = parseInt(a1)
+            a2 = parseInt(a2)
+            a3 = parseInt(a3)
+            let hasil = a1 + a2 + a3 / 3;
+            document.getElementById("hasil").value = hasil;
+        }
+    </script>
+    </table>
+</body>
+
+</html>
