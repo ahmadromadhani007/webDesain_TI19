@@ -11,9 +11,9 @@
 <body>
     <input type="text" id="angka1"> <br> <br>
     <input type="text" id="angka2"> <br> <br>
-    <button onclick="tambah()">Tambah</button> <br> <br>
-    <button onclick="kurang()">Kurang</button> <br> <br>
-    <button onclick="bagi()">Bagi</button> <br> <br>
+    <button onclick="tambah()">Tambah</button>
+    <button onclick="kurang()">Kurang</button>
+    <button onclick="bagi()">Bagi</button>
     <button onclick="kali()">Kali</button> <br> <br>
     <input type="text" id="hasil">
 
@@ -21,10 +21,30 @@
         function tambah() {
             let a1 = document.getElementById("angka1").value;
             let a2 = document.getElementById("angka2").value;
-            a1 = parseInt(a1)
-            a2 = parseInt(a2)
-            let hasil = a1 + a2;
-            document.getElementById("hasil").value = hasil;
+
+            if (a1 == "") {
+                alert("Angka 1 harus di isi !");
+            } else if (a2 == "") {
+                alert("Angka 2 harus di isi !");
+            } else {
+                a1 = parseInt(a1)
+                a2 = parseInt(a2)
+                let hasil = a1 + a2;
+                document.getElementById("hasil").value = hasil;
+            }
+
+            //And -> &&
+            //jika ingin lulus, maka harus rajin DAN bisa
+            //Or -> ||
+            //jika ingin lulus, maka harus rajin ATAU bisa
+            if (a1 == "" || a2 == "") {
+                alert("Angka 1 dan angka 2 harus di isi !");
+            } else {
+                a1 = parseInt(a1)
+                a2 = parseInt(a2)
+                let hasil = a1 + a2;
+                document.getElementById("hasil").value = hasil;
+            }
         }
         function kurang() {
             let a1 = document.getElementById("angka1").value;
@@ -32,6 +52,22 @@
             a1 = parseInt(a1)
             a2 = parseInt(a2)
             let hasil = a1 - a2;
+            document.getElementById("hasil").value = hasil;
+        }
+        function kali() {
+            let a1 = document.getElementById("angka1").value;
+            let a2 = document.getElementById("angka2").value;
+            a1 = parseInt(a1)
+            a2 = parseInt(a2)
+            let hasil = a1 * a2;
+            document.getElementById("hasil").value = hasil;
+        }
+        function bagi() {
+            let a1 = document.getElementById("angka1").value;
+            let a2 = document.getElementById("angka2").value;
+            a1 = parseInt(a1)
+            a2 = parseInt(a2)
+            let hasil = a1 / a2;
             document.getElementById("hasil").value = hasil;
         }
     </script>

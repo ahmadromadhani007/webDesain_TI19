@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <form>
+      <div class="mb-3">
+        <label for="nim" class="form-label">NIM</label>
+        <input type="text" class="form-control" id="nim">
+      </div>
+      <div class="mb-3">
+        <label for="nama" class="form-label">Nama</label>
+        <input type="text" class="form-control" id="nama">
+      </div>
+      <div class="mb-3">
+        <label for="" class="form-label">Jurusan</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>---</option>
+          <option value="1">TI</option>
+          <option value="2">IF</option>
+          <option value="3">TE</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary mb-5">Simpan</button>
+      <button type="submit" class="btn btn-warning mb-5">Batal</button>
+    </form>
+    <table class="table table-striped table-hover table-bordered">
+      <tr>
+        <th>NIM</th>
+        <th>Nama</th>
+        <th>Jurusan</th>
+      </tr>
+      <!-- tr*3>td*3 -->
+      <tr>
+        <td>123</td>
+        <td>Adi</td>
+        <td>IF</td>
+      </tr>
+      <tr>
+        <td>124</td>
+        <td>Siti</td>
+        <td>TI</td>
+      </tr>
+      <tr>
+        <td>125</td>
+        <td>Rudi</td>
+        <td>TI</td>
+      </tr>
+    </table>
+  </div>
+  
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
